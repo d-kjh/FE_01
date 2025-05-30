@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://showcases.yalco.kr/html-css/01-06/table.css"
+    />
+    <style>
+      table > caption {
+        caption-side: top;
+        padding-bottom: 10px;
+        font-size: 30px;
+      }
+      tr > th {
+        background-color: forestgreen;
+      }
+      .a {
+        background-color: #fff;
+      }
+      .b {
+        background-color: blanchedalmond;
+      }
+      tfoot {
+        background-color: #fff;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <caption>
+        우도입도 총괄요금표
+      </caption>
+      <tr>
+        <th rowspan="2">구분</th>
+        <th class="b" colspan="3">우도입도 총괄요금표</th>
+      </tr>
+      <tr>
+        <th class="a" scope="col">선박요금</th>
+        <th class="a" scope="col">도립공원입장료</th>
+        <th class="a" scope="col">터미널이용료</th>
+      </tr>
+      <tr>
+        <th scope="row">성인</th>
+        <td>2,000원</td>
+        <td>1,000원</td>
+        <td>500원</td>
+      </tr>
+      <tr>
+        <th scope="row">중학생이상</th>
+        <td>2,000원</td>
+        <td>800원</td>
+        <td>300원</td>
+      </tr>
+      <tr>
+        <th scope="row">초등학생</th>
+        <td>700원</td>
+        <td>500원</td>
+        <td>300원</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="4">*이륜차(오토바이,자전거) 및 화물차량은 별도 문의</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
