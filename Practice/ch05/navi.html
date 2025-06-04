@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 한 번도 방문하지 않은 링크 */
+    a:link {
+      color: black;
+      text-decoration: none;
+    }
+    /* 한 번 방문했던 링크 */
+    a:visited {
+      color: gray;
+    }
+    /* 클릭하는 동안 */
+    a:active {
+      color: blue;
+    }
+    /* 마우스가 올라가면 */
+    a:hover {
+      background-color: aqua;
+    }
+    input[type='radio']:checked {
+      color: red;
+    }
+  </style>
+  <body>
+    <h1>navi.html</h1>
+    <a href="https://www.airbnb.com" target="_blank">에어비엔비</a>
+    <label><input type="radio" name="typ" value="1" checked />1</label>
+    <label><input type="radio" name="typ" value="2" />2</label>
+  </body>
+</html>

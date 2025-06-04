@@ -1,0 +1,10 @@
+h1 + p {
+  color: #fff;
+  /* 인접 형제 선택자(adjacent selector) */
+  background-color: #222;
+}
+
+h1 ~ p {
+  /* 형제 선택자 (sibling selector) */
+  color: blue;
+}
