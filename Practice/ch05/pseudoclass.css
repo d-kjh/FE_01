@@ -9,6 +9,7 @@
 .outer > li li {
   text-decoration: underline;
 }
+/* sibling 선택자 */
 .starter ~ li {
   font-style: italic;
 }
@@ -32,7 +33,7 @@ ol :nth-child(3) {
 }
 
 ol :nth-child(even) {
-  /* 짝수 */
+  /* 짝수  (2n) */
   background-color: gainsboro;
 }
 ol :nth-child(3n) {
@@ -40,6 +41,6 @@ ol :nth-child(3n) {
   background-color: darkkhaki;
 }
 ol :nth-child(odd) {
-  /* 홀수 */
+  /* 홀수 (2n+1) */
   background-color: navajowhite;
 }
