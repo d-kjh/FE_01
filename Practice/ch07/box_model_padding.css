@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+span {
+  background-color: khaki;
+  display: inline-block;
+}
+.container {
+  background-color: #fff;
+}
+.container div {
+  background-color: gainsboro;
+}
+span,
+.container div {
+  padding: 20px;
+}

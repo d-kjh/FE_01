@@ -1,0 +1,18 @@
+ul {
+  background-color: cadetblue;
+}
+ul.case01 > li {
+  background-color: navajowhite;
+  margin-right: 2em;
+  display: inline-block;
+}
+/* .case01 :last-child {
+  margin-right: 0;
+} */
+ul > li {
+  background-color: salmon;
+  display: inline-block;
+}
+.case02 > :not(:last-child) {
+  margin-right: 2em;
+}

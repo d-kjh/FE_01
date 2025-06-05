@@ -1,0 +1,11 @@
+div {
+  font-size: 1.2em;
+  font-weight: 900;
+  font-style: italic;
+}
+html {
+  font-size: 16px;
+}
+.font-rem {
+  font-size: 1.2rem;
+}

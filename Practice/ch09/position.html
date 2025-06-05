@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        margin-top: 20px;
+      }
+      .static {
+        left: 20px;
+        position: static;
+      }
+      .ralative {
+        position: relative;
+        left: 10px;
+        top: 10px;
+      }
+      /* absolute는 부모를 찾음 static이 아닌 부모를 찾음
+      부모 중 static이 아닌 부모가 없다면 body 가 부모가 된다
+      부모 기준에서 위치 조정이 된다 */
+      .absolute {
+        background-color: bisque;
+        position: absolute;
+        top: 10px;
+      }
+      .absolute2 {
+        position: absolute;
+        left: 106px;
+        top: 10px;
+      }
+      .absolute3 {
+        width: 30px;
+        height: 30px;
+        background-color: darkblue;
+        font-size: 0.5em;
+        left: 10px;
+        right: ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">static-div</div>
+    <div class="ralative">ralative-div</div>
+    <div class="absolute">absolute-div</div>
+    <hr />
+    <div class="static">
+      static-div
+      <div class="absolute2">aboslute-div2</div>
+    </div>
+    <hr />
+    <div class="absolute3">
+      <div class="absolute3">absolute-div3</div>
+    </div>
+  </body>
+</html>

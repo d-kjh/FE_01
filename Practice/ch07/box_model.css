@@ -1,0 +1,24 @@
+span {
+  background-color: khaki;
+}
+.container {
+  background-color: #fff;
+}
+.container div {
+  background-color: gainsboro;
+  display: inline-block;
+}
+.container :first-child {
+  color: tomato;
+}
+/* p:first-of-type */
+
+.container div:first-of-type {
+  color: skyblue;
+}
+/* :nth-child(2) */
+.inline_block {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
