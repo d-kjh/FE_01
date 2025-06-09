@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  background-color: gray;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+header h1 {
+  font-size: 1.7em;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 300vh;
+  margin-top: 90px;
+  background-color: darkcyan;
+}
+
+.one {
+  width: 60%;
+  height: 100vh;
+}
+
+.one > img {
+  width: 100%;
+  display: block;
+}
+
+.two {
+  background-color: cadetblue;
+  width: 40%;
+  overflow: auto;
+  position: sticky;
+  height: 50vh;
+  top: 0;
+  padding: 70px 0 0 12px;
+  text-align: center;
+}
+.three {
+  position: sticky;
+  top: 0;
+  height: 200px;
+  padding-top: 100px;
+  background-color: beige;
+}
