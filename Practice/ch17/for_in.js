@@ -1,4 +1,4 @@
-// object2.js
+// for_in.js 객체에 사용
 const person2 = {
   name: '김옥히',
   age: 22,
@@ -9,6 +9,14 @@ const person2 = {
     graduated: true,
   },
 };
+for (const item in person2) {
+  console.log(item, ': ', person2[item]);
+}
 
-// '전자공학' 읽어서 출력
-console.log(person2.education.major[1]);
+for (const item in person2) {
+  console.log(item);
+}
+console.log('-=--------------------');
+// 응용력
+
+
