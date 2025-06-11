@@ -13,7 +13,6 @@ section.plant {
 }
 ul {
   position: relative;
-  background-color: forestgreen;
 }
 
 .soldout::before {
@@ -25,4 +24,12 @@ ul {
   font-size: 0.5em;
   padding: 3px;
   color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.organic::after {
+  content: ' (유기농)';
 }

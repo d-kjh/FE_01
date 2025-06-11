@@ -9,11 +9,13 @@
   <body>
     <h1>jsedit1.html</h1>
     <section class="plant">
-      <h2 id="vegetable_title">채소</h2>
+      <h2 id="vegetable_title"><i>채소</i></h2>
       <ul>
-        <li>당근</li>
+        <li class="organic">당근</li>
         <li>오이</li>
-        <li class="soldout">양파</li>
+        <li>상추</li>
+        <li>가지</li>
+        <li class="soldout hidden">양파</li>
       </ul>
     </section>
     <section id="sweets" class="plant">
@@ -35,8 +37,25 @@
     <script>
       const $vegetableTitle = document.querySelector('#vegetable_title');
       // $vegetableTitle.textContent = 'Vegetable';
+      console.log('$vegetableTitle.textContent: ', $vegetableTitle.textContent);
       // $vegetableTitle.innerText = 'Vegetable';
-      $vegetableTitle.innerHTML = '<i>채소 (Vegetable)</i>';
+      console.log('$vegetableTitle.innerText: ', $vegetableTitle.innerText);
+      // $vegetableTitle.innerHTML = '<i>채소 (Vegetable)</i>';
+      $vegetableTitle.innerHTML += '(Vegetable)';
+      console.log('$vegetableTitle.innerHTML: ', $vegetableTitle.innerHTML);
+
+      const $onion = document.querySelector('section ul').lastElementChild;
+      console.log('$onion.classList: ', $onion.classList);
+      console.log(Array.isArray($onion.classList));
+      $onion.classList.remove('hidden'); // class 삭제
+      $onion.classList.add('organic'); // class 추가
+      $onion.className = ''; // class 다 공백(삭제)
+      // $onion.style['font-size'] = '2em';
+      $onion.style.fontSize = '2em';
+      //백그라운드 컬러를 blue로 변경
+      $onion.style.backgroundColor = 'blue';
+      // 리스트 점 빼기
+      $onion.style.listStyleType = 'none';
     </script>
   </body>
 </html>

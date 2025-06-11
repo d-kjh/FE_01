@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./jsselect.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>jsremove.html</h1>
+    <section class="plant">
+      <h2 id="vegetable_title"><i>채소</i></h2>
+      <ul>
+        <li class="organic">당근</li>
+        <li>오이</li>
+        <li>상추</li>
+        <li>가지</li>
+        <li class="soldout hidden">양파</li>
+      </ul>
+    </section>
+    <section id="sweets" class="plant">
+      <h2>과일</h2>
+      <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>포도</li>
+      </ul>
+    </section>
+    <section class="meat">
+      <h2>고기</h2>
+      <ul>
+        <li class="soldout">소고기</li>
+        <li>돼지고기</li>
+        <li class="soldout">닭고기</li>
+      </ul>
+    </section>
+    <script>
+      const $vegetableTitle = document.querySelector('#vegetable_title');
+      $vegetableTitle.remove(); // 삭제
+      console.log('$vegetableTitle: ', $vegetableTitle);
+
+      const $selfH2Tag = document.createElement('h2');
+      $selfH2Tag.textContent = '내가 만든 h2';
+
+      const $secondSection = document.querySelector('#sweets');
+      $secondSection.prepend($vegetableTitle); // 위에 추가, 이동
+      $secondSection.append($selfH2Tag); // 아래 추가, 이동
+    </script>
+  </body>
+</html>
