@@ -26,7 +26,7 @@
         <li>포도</li>
       </ul>
     </section>
-    <section class="meat">
+    <section id="meat">
       <h2>고기</h2>
       <ul>
         <li class="soldout">소고기</li>
@@ -45,6 +45,18 @@
       const $secondSection = document.querySelector('#sweets');
       $secondSection.prepend($vegetableTitle); // 위에 추가, 이동
       $secondSection.append($selfH2Tag); // 아래 추가, 이동
+
+      // $secondSection.removeChild();
+      $secondSection.children[0].remove();
+
+      const $meat_li_list = document.querySelectorAll('#meat > ul li');
+      console.log('$meat_li_list: ', $meat_li_list);
+      // for (i = 0; i < $meat_li_list.length; i++) {
+      //   $meat_li_list[i].remove();
+      // }
+      for (const item of $meat_li_list) {
+        item.remove();
+      }
     </script>
   </body>
 </html>
