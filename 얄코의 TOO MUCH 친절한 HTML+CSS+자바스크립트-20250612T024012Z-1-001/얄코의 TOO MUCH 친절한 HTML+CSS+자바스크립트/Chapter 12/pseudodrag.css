@@ -1,0 +1,16 @@
+body { font-size: 1.2em; }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+p { width: 400px; }
+input { font-size: 1.1em; }
+
+/* 선택 영역 가상 요소 */
+.orange::selection {
+  background-color: orange;
+}
+.dark::selection {
+  color: lightgreen;
+  background-color: #222;
+}

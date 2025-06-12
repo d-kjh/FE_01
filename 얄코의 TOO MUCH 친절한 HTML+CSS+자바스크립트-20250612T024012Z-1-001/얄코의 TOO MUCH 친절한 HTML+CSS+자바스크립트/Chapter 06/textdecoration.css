@@ -1,0 +1,6 @@
+p {
+  text-decoration: blue wavy overline 5px;
+
+  /* capitalize, uppercase, lowercase */
+  text-transform: capitalize;
+}

@@ -1,0 +1,7 @@
+p {
+  /* normal, italic, oblique */
+  font-style: normal;
+
+  /* normal, bold, 100~900 */
+  font-weight: normal;
+}

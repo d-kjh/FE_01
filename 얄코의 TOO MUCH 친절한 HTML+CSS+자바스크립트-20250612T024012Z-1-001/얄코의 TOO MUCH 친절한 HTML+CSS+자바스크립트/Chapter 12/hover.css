@@ -1,0 +1,8 @@
+/* 마우스 오버 */
+a:hover {
+  background-color: yellow;
+}
+/* 클릭 중 */
+a:active {
+  background-color: aqua;
+}

@@ -1,0 +1,8 @@
+input[type=text], button, img {
+  /* sub, super, text-top, text-bottom, middle, 수치 */
+  vertical-align: baseline;
+}
+td {
+  /* middle, top, bottom, baseline */
+  vertical-align: baseline;
+}

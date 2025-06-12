@@ -31,7 +31,7 @@
     <br />
     <div id="click_position">클릭 전</div>
     <br />
-    <div id="view">view</div>
+    <div id="view"></div>
     <input type="text" id="my_input" />
 
     <script>
@@ -70,7 +70,7 @@
         e.target.setAttribute('placeHolder', '');
       });
       const $view = document.querySelector('#view');
-      $myInput.addEventListener('change', (e) => {
+      $myInput.addEventListener('keypress', (e) => {
         $view.textContent = e.target.value;
       });
     </script>

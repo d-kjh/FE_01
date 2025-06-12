@@ -1,0 +1,17 @@
+p {
+  background-color: lightblue;
+  margin: 24px;
+  padding: 24px;
+}
+
+p.special {
+  /* margin-top: */
+  /* margin-bottom: */
+  /* margin-left: */
+  /* margin-right: */
+
+  /* padding-top */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-right */
+}

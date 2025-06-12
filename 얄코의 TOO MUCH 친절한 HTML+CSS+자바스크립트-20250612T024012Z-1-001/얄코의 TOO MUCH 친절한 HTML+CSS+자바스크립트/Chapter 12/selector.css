@@ -1,0 +1,5 @@
+/* 속성값을 기준으로 선택 */
+a[href="https://www.yalco.kr"] {
+  color: #ff4e00;
+  font-weight: bold;
+}

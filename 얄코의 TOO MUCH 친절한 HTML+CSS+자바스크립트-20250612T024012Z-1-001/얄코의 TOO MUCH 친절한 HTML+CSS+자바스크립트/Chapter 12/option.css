@@ -1,0 +1,14 @@
+/* 체크된 것 */
+input[type=radio]:checked+label {
+  color: tomato;
+  font-weight: bold;
+}
+/* 활성화된 것 */
+input[type=radio]:enabled+label {
+  text-decoration: underline;
+}
+/* 비활성화된 것 */
+input[type=radio]:disabled+label {
+  color: lightgray;
+  text-decoration: line-through;
+}

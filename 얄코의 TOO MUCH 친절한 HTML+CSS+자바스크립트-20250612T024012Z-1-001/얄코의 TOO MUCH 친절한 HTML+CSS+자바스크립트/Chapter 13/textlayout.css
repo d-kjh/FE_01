@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  border-collapse: separate;
+
+  /* border-collapse가 collapse면 th, td의 border에 묻힘 */
+  border: 1px solid black;
+
+  /* border-collapse가 sepatate일 때 */
+  border-spacing: 0.5em;
+
+  caption-side: top;
+  caption-side: bottom;
+
+  table-layout: auto;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid gray;
+}
+
+colgroup col:first-child {
+  width: 300px;
+}

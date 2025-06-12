@@ -1,0 +1,8 @@
+div {
+  /* 텍스트에 부족한 너비 */
+  width: 300px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

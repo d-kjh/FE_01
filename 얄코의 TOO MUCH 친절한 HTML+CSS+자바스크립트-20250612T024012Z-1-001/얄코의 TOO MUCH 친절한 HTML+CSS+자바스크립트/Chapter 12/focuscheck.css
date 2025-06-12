@@ -1,0 +1,31 @@
+body {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+label {
+  margin: 0 1em 0 0.2em;
+}
+button {
+  font-size: 0.9em;
+  margin: 0 1em 0.8em 0;
+}
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #ccc;
+  padding: 3px;
+}
+
+[class*="focus"]:focus {
+  outline: 2px solid deeppink;
+}
+
+.tab-focus:focus,
+.no-focus:focus {
+  outline: none;
+}
+
+/* 탭으로 포커스된 요소에 적용 */
+/* 브라우저 지원 확인 */
+[class*="tab-focus"]:focus-visible {
+  outline: 2px solid dodgerblue;
+}

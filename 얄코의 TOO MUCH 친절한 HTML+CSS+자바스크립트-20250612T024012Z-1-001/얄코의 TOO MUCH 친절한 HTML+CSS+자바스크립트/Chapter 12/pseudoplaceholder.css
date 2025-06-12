@@ -1,0 +1,13 @@
+body { font-size: 1.2em; }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+p { width: 400px; }
+input { font-size: 1.1em; }
+
+/* 플레이스홀더 가상 요소 */
+input:required::placeholder {
+  color: darkred;
+  background-color: yellow;
+}

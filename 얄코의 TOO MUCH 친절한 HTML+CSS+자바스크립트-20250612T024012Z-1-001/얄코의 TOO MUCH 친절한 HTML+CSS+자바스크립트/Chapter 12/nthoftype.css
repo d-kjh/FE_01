@@ -1,0 +1,34 @@
+body { font-size: 1.2em; }
+div { margin-bottom: 1em; }
+div * { margin-right: 8px; }
+b { color: dodgerblue; }
+i { color: orangered; }
+
+/* 부모 요소 내 첫 번째 ~요소 */
+b:first-of-type {
+  text-decoration: overline;
+}
+/* 부모 요소 내 마지막 ~요소 */
+i:last-of-type {
+  text-decoration: line-through;
+}
+
+/* 부모 요소 내 N번째 ~요소 */
+b:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+/* 부모 요소 내 N번째 ~요소 */
+b:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+/* 부모 요소 내 유일한 ~요소 */
+div :only-of-type {
+  text-decoration: overline line-through underline;
+}
+/* 부모 요소 내 종류 무관 유일한 요소(독자) */
+div :only-child {
+  text-decoration: wavy underline tomato;
+}
+
