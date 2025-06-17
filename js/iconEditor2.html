@@ -65,7 +65,7 @@
                     const $td = makeElement('td');
                     $tr.appendChild($td);
                     $td.addEventListener('click', () => {
-                        $td.style.backgroundColor = $inputColor.value;
+                        $td.style.backgroundColor = !$td.style.backgroundColor ? $inputColor.value : '';
                     })
                 }
             }
